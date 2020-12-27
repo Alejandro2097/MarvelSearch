@@ -1,0 +1,142 @@
+@font-face {
+    font-family: marvel;
+    src: url(fonts/marvel.ttf);
+}
+body{
+  overflow: hidden;
+}
+.bar-top{
+  background: #0e0e0e;
+  color: #fff;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar-top h1, .bar-top i{
+  font-size: 4rem;
+}
+.bar-top i{
+  width: 5%;
+}
+.bar-top h1{
+  font-family: marvel;
+  width: 25%;
+}
+.bar-top img{
+  width: 20%;
+}
+.fondo-buscador-container{
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 100%;
+  height: 43rem;
+  background-image: url(../img/comics.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+.buscador-container{
+  height: 43rem;
+  background-color: rgba(29, 29, 29, 0.7);
+}
+.buscador-container .column{
+  height: 100%;
+  display: flex;
+}
+.character-form{
+  width: 50%;
+  height: 10%;
+}
+.input-group, .input-group-button, .input-group-button input{
+  height: 100%;
+}
+input[type="text"]{
+  font-size: 1.8rem;
+  font-family: marvel;
+}
+input[type="submit"]{
+  font-family: marvel;
+  background-color: #F11E22;
+}
+input[type="submit"]:hover{
+  background-color: #d20509;
+}
+.buscador-container + .row{
+  margin-top: 3rem;
+}
+.buscador-container + .row, .buscador-container + .row + .row{
+  height: 24rem;
+}
+.buscador-container + .row .column:last-of-type{
+  display: flex;
+}
+.nombre{
+  background-color: #F11E22;
+  color: #fff;
+  width: auto;
+  font-family: marvel;
+  text-align: center;
+}
+.desc-body{
+  background-color: #252525;
+  color: #fff;
+  padding: 0.7rem;
+  text-align: justify;
+}
+.subtitle{
+  background-color: #252525;
+  width: 30%;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: marvel;
+  text-align: center;
+  border-top-right-radius: 5px;
+}
+.list{
+  border: 2px solid #252525;
+  height: 80%;
+  overflow: auto;
+  padding-top: 1rem;
+}
+.list ul{
+  list-style-type: square;
+}
+.list ul li a{
+  color: #252525;
+}
+.list ul li a:hover{
+  color: #F11E22;
+}
+.thumbnail{
+  width: 70%;
+}
+.back-container{
+  position: absolute;
+  top: 60rem;
+  right: 0px;
+  width: 10rem;
+  height: 7rem;
+  background: #F11E22;
+  z-index: 2;
+  border: 2px solid #252525;
+  border-right: 0;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+.back-container:hover{
+  background-color: #d20509;
+}
+
+.back-container span{
+  color: #fff;
+}
+
+#new-search-title{
+  font-family: marvel;
+}
+
+#new-search-icon{
+  font-size: 4rem;
+}

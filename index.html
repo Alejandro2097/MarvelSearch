@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="expanded-row">
+      <div class="column bar-top align-center">
+        <i class="fi-magnifying-glass"></i><h1>Buscador</h1><img src="img/marvel-logo.png" alt="MARVEL" />
+      </div>
+    </div>
+    <div class="fondo-buscador-container"></div>
+    <div class="expanded-row buscador-container">
+      <div class="column align-center align-middle">
+        <form class="character-form" action="javascript:;">
+          <div class="input-group">
+            <input class="input-group-field" type="text">
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Buscar">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row" id="page2">
+      <div class="column">
+        <h2 class="nombre">Nombre</h2>
+        <h5 class="subtitle">Descripcion</h5>
+        <p class="desc-body" id="descripcion">
+        </p>
+      </div>
+      <div class="column align-center">
+        <img src="img/default.png" class="thumbnail" id="image"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h5 class="subtitle">Comics</h5>
+        <div class="list">
+          <ul id="comics">
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <h5 class="subtitle">Series</h5>
+        <div class="list">
+          <ul id="series">
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <h5 class="subtitle">Stories</h5>
+        <div class="list">
+          <ul id="stories">
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <h5 class="subtitle">Events</h5>
+        <div class="list">
+          <ul id="events">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-container">
+      <span id="new-search-title">Nueva Busqueda</span>
+      <span id="new-search-icon"><i class="fi-magnifying-glass"></i></span>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
